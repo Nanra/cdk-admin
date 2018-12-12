@@ -10,8 +10,8 @@ import { MatSnackBar } from '@angular/material';
   styleUrls: ['./guarded-routes.component.scss']
 })
 export class GuardedRoutesComponent implements OnInit {
-  message = 'you do not have permission to access this link';
-  action = 'exit';
+  message = 'You do not have permission to access this link';
+  action = 'Exit';
   constructor(public router: Router, public snackBar: MatSnackBar) {
 
   }
@@ -22,7 +22,7 @@ export class GuardedRoutesComponent implements OnInit {
   Onclick() {
 
     this.router.navigate(['/auth/guarded-routes/example']);
-    // this.router.navigate(['/auth/guarded-routes/', { outlets: { popup: [ 'example' ] }}]); 
+    // this.router.navigate(['/auth/guarded-routes/', { outlets: { popup: [ 'example' ] }}]);
   }
   Onclicked() {
 
